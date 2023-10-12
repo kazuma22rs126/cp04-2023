@@ -1,9 +1,9 @@
 /**/
    body{
-       background-color: #ff0000; 
+       background-color: skyblue; 
    }
      button{
-         color : blue;
+         color : red;
          font-family:Times;
          border-radius:1080px;
    }
@@ -35,6 +35,9 @@
     }
     
     #time {
+        box-shadow:3px 3px 3px;
+        width:50%;
+        margin:0auto;
         color: #ffffff;
         font-size: 20px;
         text-align: center;
@@ -62,6 +65,7 @@
     }
 
     #btnC {
+        color:blue;
         font-size: 10px;
         position:absolute; top:380px; left:70%; width:28%; height:60px; 
     }
