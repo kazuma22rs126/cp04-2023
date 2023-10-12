@@ -1,6 +1,6 @@
 /**/
    body{
-       background-color: #44f8f8; 
+       background-color: #ff0000; 
    }
      button{
          color : blue;
@@ -50,6 +50,7 @@
     }
     
     #btnA {
+        color:green;
         font-size: 20px;
         position:absolute; top:380px; left:2%; width:43%; height:60px; 
     }
