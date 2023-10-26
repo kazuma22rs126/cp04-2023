@@ -154,6 +154,9 @@
     var startTime = 0;
     var period = 0;
 
+    var audio_bgm =  new Audio();
+
+
 
     
     // ボタンの初期設定
@@ -173,9 +176,7 @@
         img.onload=function(){
             ctx.drawImage(img,0,0,250,250);
         }; 
-        var audio = new Audio();
-        audio.src = "pin.wav";
-        audio.play();
+        
         
         
         
@@ -187,13 +188,21 @@
     function btnAClick(e){
       active = true;
       startTime = new Date();
-
+      if(active){
+         var audio = new Audio();
+         audio_bgm.src = "Thirsty.mp3.crdownload";
+         audio_bgm.play();
+      }
         
     }
 
     // ButtonBがクリックされた時の処理
     function btnBClick(e){
         active = false;
+        var audio = new Audio();
+        audio.src = "pin.wav";
+        audio.play();
+        audio_bgm.pause();
 
         
     }
@@ -205,6 +214,7 @@
         period = 60*parseInt($("#minute").val())+parseInt($("#second").val());
         $("#time").html("経過時間: 0");
         $("#remain").html("残り時間: "+period);
+        
     }
     
  
